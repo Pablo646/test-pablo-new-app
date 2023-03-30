@@ -11,6 +11,8 @@ function App() {
     </div>
   );
 }
+
+
 const pokemonList = [
   {
     name: "bulbasaur",
