@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
+import Navbar from './components/navbar'
 
 
 const pokemonList = [
@@ -35,16 +36,14 @@ const pokemonList = [
 
 function App() {
  const[pokemonIndex , pokemonFutur]=useState(0)
-const incrementation=()=>{pokemonFutur(pokemonIndex+1)}
-const decrementation=()=>{pokemonFutur(pokemonIndex-1)}
+
 
   return (
+    
     <div className='masterDiv'>
    <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
-   <div className='btnContainer'>    
-   {pokemonIndex > 0 ? <button className='btnIndexSelector' onClick={decrementation}>Precédent</button>:null}
-   {pokemonIndex < pokemonList.length -1 ?<button className='btnIndexSelector' onClick={incrementation}>Suivant</button>:null}
-   </div>
+   <Navbar pokemonIndex={pokemonIndex} pokemonList={pokemonList} pokemonFutur={pokemonFutur}/>
+   
     </div>
 
   );
