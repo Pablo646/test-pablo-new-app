@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import PokemonCard from './components/PokemonCard'
 import Navbar from './components/navbar'
-
+import { useEffect } from "react";
 
 const pokemonList = [
   {
@@ -32,11 +32,18 @@ const pokemonList = [
     },
   ];
 
+  
+
 
 
 function App() {
  const[pokemonIndex , pokemonFutur]=useState(0)
-
+ useEffect(
+  () => {
+    alert("hello pokemon trainer what's up")
+  },
+  []
+);
 
   return (
     
