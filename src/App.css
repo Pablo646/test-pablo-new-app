@@ -33,6 +33,13 @@
   }
 }
 
+.masterDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   padding: 2em;
 }
@@ -77,7 +84,7 @@
   transition: 0.3s ease-in-out;
 }
  .PokemonCard:hover{
-  scale: 1.1;
+  scale: 1.05;
   box-shadow: 0  0 15px 9px white;
  }
 
@@ -90,4 +97,29 @@
  .BulbasaurCase:hover{
   scale: 0.9;
   box-shadow: 0  0 15px 9px white;
+ }
+
+ .btnContainer{
+  display: flex;
+  justify-content: space-around;
+ }
+
+ .btnIndexSelector{
+  padding: 1.5em 0;
+  margin: 1.5em;
+  width: 25em;
+  text-transform: uppercase;
+  background: white;
+  border-radius: 15px;
+  color: grey;
+  box-shadow: 0  0 11px 5px white;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+
+ }
+ 
+ .btnIndexSelector:hover{
+  scale: 1.05;
+  box-shadow: 0  0 15px 9px white;
+
  }
