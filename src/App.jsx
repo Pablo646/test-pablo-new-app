@@ -44,6 +44,7 @@ function App() {
   },
   []
 );
+pokemonList[pokemonIndex].name === "pikachu" ? alert('Pikatchoum! im sick!') : null;
 
   return (
     
