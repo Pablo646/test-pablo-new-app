@@ -35,15 +35,18 @@ const pokemonList = [
 
 
 function App() {
- const[pokemonIndex , pokemonFutur]=useState(0)
+ const[pokemonIndex, pokemonFutur]=useState(0)
 
 
   return (
     
     <div className='masterDiv'>
    <PokemonCard pokemon={pokemonList[pokemonIndex]}/>
-   <Navbar pokemonIndex={pokemonIndex} pokemonList={pokemonList} pokemonFutur={pokemonFutur}/>
-   
+   <div className='masterDiv2'>
+   {pokemonList.map((pokemon , index )=>(
+   <Navbar key={pokemon.name} pokemonName={pokemon.name}  index = {index} pokemonFutur={pokemonFutur}/>
+   ))}
+   </div>
     </div>
 
   );

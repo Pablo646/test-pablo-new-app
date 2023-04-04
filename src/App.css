@@ -1,4 +1,6 @@
 #root {
+  display: flex;
+  flex-direction: column;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -102,6 +104,7 @@
  .btnContainer{
   display: flex;
   justify-content: space-around;
+ 
  }
 
  .btnIndexSelector{
@@ -122,4 +125,11 @@
   scale: 1.05;
   box-shadow: 0  0 15px 9px white;
 
+ }
+
+ .masterDiv2{
+  display: flex;
+flex-flow:row wrap;
+align-items: center;
+justify-content: center;
  }
