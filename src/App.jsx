@@ -11,24 +11,30 @@ const pokemonList = [
       name: "bulbasaur",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+        type:"beuhair"
     },
     {
       name: "charmander",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+        type: "fire"
     },
     {
       name: "squirtle",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+        type: "water"
     },
     {
       name: "pikachu",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        type:"electric"
     },
     {
-      name: "mew",
+      name: "mewtwo",
+      imgSrc:"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+      type: "psychopath"
     },
   ];
 
